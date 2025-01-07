@@ -115,7 +115,6 @@ impl<'info> SwapTickSequence<'info> {
     /// - `(usize, i32, &mut Tick)`: The array_index which the next initialized index was found, the next initialized tick-index & a mutable reference to that tick
     /// - `TickArraySequenceInvalidIndex` - The swap loop provided an invalid array index to query the next tick in.
     /// - `InvalidTickArraySequence`: - User provided tick-arrays are not in sequential order required to proceed in this trade direction.
-
     pub fn get_next_initialized_tick_index(
         &self,
         tick_index: i32,
